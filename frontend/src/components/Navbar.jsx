@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <div className='border-b-2 border-gray-300 px-[5%] py-2 relative z-50 bg-white'>
+      <div className='fixed top-0 left-0 w-full border-b-2 border-gray-300 px-[5%] py-2 z-50 bg-white/70 backdrop-blur-sm'>
         <nav className='flex justify-between items-center'>
           <img className='h-10 md:h-15' src={Logo} alt="bachelor-homes logo" />
 

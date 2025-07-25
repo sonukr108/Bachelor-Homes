@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -11,13 +10,12 @@ import Slide5 from '../assets/sliders/slide5.svg'
 
 const CarouselComponent = () => {
   return (
-    <div className="w-full md:w-115 lg:w-155 xl:w-220 max-w-[880px]">
+    <div className="w-full h-full md:w-115 lg:w-155 xl:w-220 max-w-[880px]">
       <Swiper
         modules={[Autoplay, Pagination]}
         spaceBetween={30}
         slidesPerView={1}
         loop={true}
-        pagination={{ clickable: true }}
         autoplay={{ delay: 2500 }}
       >
         {[Slide1, Slide2, Slide3, Slide4, Slide5].map((slide, index) => (
